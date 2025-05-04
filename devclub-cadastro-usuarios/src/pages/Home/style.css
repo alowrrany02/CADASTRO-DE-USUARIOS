@@ -1,79 +1,153 @@
-.container{
+.container {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 100px;
-}
-
-h1{
+  }
+  
+  h1 {
     color: white;
     font-size: 28px;
     text-align: center;
-}
-
-form{
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 30px;
     border-radius: 10px;
-    background-color:#2e2d4e ;
+    background-color: #2e2d4e;
     max-width: 50%;
     width: 400px;
     margin-bottom: 20px;
-
-    & button{
-        border-radius: 30px;
-        background-color: #8b8ae1;
-        height: 40px;
-        border: none;
-        font-weight: bold;
-        cursor: pointer;
-        color: white;
-        font-size: 14px;
+  
+    button {
+      border-radius: 30px;
+      background-color: #8b8ae1;
+      height: 40px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      color: white;
+      font-size: 14px;
+      transition: opacity 0.3s ease;
     }
-
-    & button:hover{
-        opacity: 0.8;
+  
+    button:hover {
+      opacity: 0.8;
     }
-
-    & input{
-        border: 1px solid #48456c;
-        border-radius: 30px;
-        height: 40px;
-        background-color: #363653;
-        color: white;
-        font-size: 16px;
-        padding-left: 10px ;
-        outline: none;
+  
+    input {
+      border: 1px solid #48456c;
+      border-radius: 30px;
+      height: 40px;
+      background-color: #363653;
+      color: white;
+      font-size: 16px;
+      padding-left: 10px;
+      outline: none;
     }
-}
-
-.card{
+  }
+  
+  .card {
     display: flex;
     justify-content: space-between;
     background-color: #2e2d4e;
     margin: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     width: 400px;
     border-radius: 10px;
-
-    & p{
-        color: white;
-        font-weight: bold;
-        
-        & span{
-            font-weight: normal;
-        }
+    align-items: center;
+  
+    p {
+      color: white;
+      font-weight: bold;
+     
+  
+      span {
+        font-weight: normal;
+      }
     }
-
-    & button{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+  
+    /* Container para os dados e botões */
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      flex: 1;
     }
-    &bottom{
-        opacity: 0.5;
+  
+    /* Botões da visualização */
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      
+      padding: 5px;
+      transition: opacity 0.3s ease;
     }
+  
+    button:hover {
+      opacity: 0.7;
+    }
+  
+    /* Estilo do ícone de lixeira */
+    button img {
+      width: 20px;
+      height: 20px;
+    }
+  .butonn{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+  }
 
-}
+  .butoonnovo{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+  }
+    /* Estilo para inputs no modo edição */
+    input {
+      border: 1px solid #48456c;
+      border-radius: 10px;
+      height: 30px;
+      background-color: #363653;
+      color: white;
+      font-size: 14px;
+      padding-left: 10px;
+      outline: none;
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    /* Botões de salvar e cancelar na edição */
+    div > button {
+      background-color: #8b8ae1;
+      color: white;
+      border-radius: 20px;
+      height: 30px;
+      width: 80px;
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 5px;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+  
+    div > button:hover {
+      background-color: #6f6ed1;
+    }
+  
+    /* Botão cancelar com cor diferente */
+    div > button:nth-child(2) {
+      background-color: #e18b8b;
+    }
+  
+    div > button:nth-child(2):hover {
+      background-color: #d16f6f;
+    }
+  }
+  
